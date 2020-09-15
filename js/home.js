@@ -10,6 +10,7 @@ if (user == undefined) {
 }
 else {
     document.getElementById("message").innerHTML = "<p> Welcome     " + user + "</p>";
+    getcolors();
 };
 
 function getcolors() {
@@ -36,7 +37,7 @@ function getcolors() {
     ajax.send();
 }
 
-getcolors();
+
 
 
 
