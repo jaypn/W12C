@@ -5,7 +5,7 @@ let userToken = Cookies.get('Token')
 
 
 if (user == undefined) {
-    document.getElementById("message").innerHTML = '<a href="index.html"> No user logged in + </a>';
+    document.getElementById("message").innerHTML = '<a href="index.html"> No user logged in please go to login page  </a>';
 
 }
 else {
@@ -23,7 +23,8 @@ function getcolors() {
                 document.getElementById("colors").innerHTML += "<h3>" + getcolors.data[i].year + "<h3>";
                 let div = document.createElement("div");
                 div.style.width = "300px";
-                div.style.height = "300px"
+                div.style.height = "300px";
+                
                 div.style.background = getcolors.data[i].color;
                 document.getElementById("colors").append(div);
             }
@@ -33,11 +34,14 @@ function getcolors() {
     ajax.open("GET", "https://reqres.in/api/unknown", true);
 
     ajax.send();
-
-
 }
 
 getcolors();
+
+
+
+
+
 
 
 

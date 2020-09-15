@@ -1,4 +1,11 @@
 body {
-  background-color: 0;
+  background-color: wheat;
+  text-align: center;
+}
+
+#colors {
+  margin: auto;
+  width: 30%;
+  padding: 20px;
 }
 /*# sourceMappingURL=home.css.map */
